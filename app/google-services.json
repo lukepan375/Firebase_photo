@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "703364332236",
+    "firebase_url": "https://fir-photo.firebaseio.com",
+    "project_id": "fir-photo",
+    "storage_bucket": "fir-photo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703364332236:android:71c5ce6b3ac84079",
+        "android_client_info": {
+          "package_name": "com.example.firebase_photo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703364332236-nb8jhrf5gfopd1d9l4ssfi3k31dt801g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase_photo",
+            "certificate_hash": "1C287AC087AD14DD4A3C72E3F90F8DFFFC76B0C9"
+          }
+        },
+        {
+          "client_id": "703364332236-38hvptflnce5t2odeh7jl5jg7oukp4v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc5BaxdnVjQvFpDrvyHST2Yt0iWCAZcYA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703364332236-38hvptflnce5t2odeh7jl5jg7oukp4v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
