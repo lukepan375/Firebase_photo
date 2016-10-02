@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 public class MainActivity extends AppCompatActivity implements FirebaseAuth.AuthStateListener {
     private static final String TAG = "MainActivity";
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements FirebaseAuth.Auth
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//FCM  (request the TOKEN)
+        String token = FirebaseInstanceId.getInstance().getToken();
+        Log.d(TAG,"token for FCM is "+token);
+//     -----------------------------
+
+
 
         //Toolbar(在activity_main.xml可看到) 就是以前的ActionBar
         //,content_main.xml則是管理actionbar以下的內容版面配置
@@ -126,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements FirebaseAuth.Auth
 
             logon=true;
 
-
+            getSharedPreferences("pref_name",MODE_PRIVATE).edit().putString("pref_userid",user.getUid()).apply();
             //Save some data ,Update user data every logged in.
 
             //connect to the root  of database
@@ -142,5 +149,9 @@ public class MainActivity extends AppCompatActivity implements FirebaseAuth.Auth
 
 
         }
+    }
+
+    public void logout(View v){
+
     }
 }
